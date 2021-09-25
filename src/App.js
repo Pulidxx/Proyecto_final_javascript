@@ -17,9 +17,7 @@ function App() {
           <Col md={6}>
             <Home />
           </Col>
-          <Col md={4}>
-            <Home />
-          </Col>
+          <Col md={4}></Col>
         </Row>
       </Container>
     </div>

@@ -2,7 +2,7 @@
   background: rgba(21, 32, 43);
   color: rgb(255, 255, 255);
   min-height: 100vh;
-  text-align: center;
+  max-width: 100vw;
 }
 .my-navbar {
   background-color: brown;
@@ -12,11 +12,10 @@
   width: 18rem;
 }
 .svg-icon {
-  height: 1em;
+  height: 4rem;
   fill: currentcolor;
-  /* currentColor actua como una variable tomando 
-     el color el nodo padre. 
-     Si estás utilizando vectores que poseen distintos 
-     rellenos, no serán afectados por esta línea
-  */
+}
+.logo {
+  text-align: center;
+  padding: 20px 0;
 }
