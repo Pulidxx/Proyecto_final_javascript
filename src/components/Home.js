@@ -8,49 +8,37 @@ class Home extends Component {
     super(props);
 
     this.state = {
-      superHeroes: [
+      tweets: [
         {
-          nombre: "Capitan America",
-          img: "https://media.vandalsports.com/i/1706x960/4-2021/2021427125442_1.jpg.webp",
-          identidad: "Steve Rogers",
-          grupo: "vengadores",
+          _id: "61495d840bfa5ceca1afb2f4",
+          author: "anonymous",
+          content: "xd",
+          date: "2021-09-21T04:20:20.182Z",
+          __v: 0,
         },
         {
-          nombre: "Superman",
-          img: "https://sm.ign.com/t/ign_es/screenshot/default/publicity-photo-superman-the-movie-20409106-1054-1_8zn8.1280.jpg",
-          identidad: "Clark Kend",
-          grupo: "Liga de la justicia",
+          _id: "614a42925f905b960ba90987",
+          author: "Santiago",
+          content: "Inicia proyecto GIWEB",
+          date: "2021-09-21T20:37:38.448Z",
+          type: "GIWEB",
+          __v: 0,
         },
         {
-          nombre: "Iron Man",
-          img: "https://i1.wp.com/hipertextual.com/wp-content/uploads/2021/02/Iron-Man-PS5.jpg?fit=2500%2C1500&ssl=1",
-          identidad: "Tony Stark",
-          grupo: "Vengadores",
+          _id: "614a42b65f905b960ba90989",
+          author: "Santiago",
+          content: "Ojala acabemos hoy con React",
+          date: "2021-09-21T20:38:14.479Z",
+          type: "GIWEB",
+          __v: 0,
         },
         {
-          nombre: " iron man",
-          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4ByXNWknFXoSG358Var0FwXGshP_9lJGxg&usqp=CAU",
-          identidad: "Tony Stark",
-          grupo: "Vengadores",
-        },
-        {
-          nombre: "Wolverine",
-          img: "https://www.quever.news/u/fotografias/m/2021/2/11/f608x342-6627_36350_7.jpg",
-          identidad: "Logan",
-          grupo: "X-Men",
-        },
-        {
-          nombre: "Scott Summers",
-          identidad: "Cyclops",
-          imagen:
-            "https://cdn.glitch.com/6137de19-12c5-43e0-9704-2252d809dcfb%2FCyclops.png",
-          grupo: "xmen",
-        },
-        {
-          nombre: "Spider-man",
-          img: "https://www.universalorlando.com/webdata/k2/es/us/files/Images/ioa-amazing-adventures-of-spiderman-ride-animation-cf-b.jpg",
-          identidad: "Peter Parker",
-          grupo: "Vengadores",
+          _id: "614a42de5f905b960ba9098b",
+          author: "Santiago",
+          content: "Pilas con el manejo de objetos",
+          date: "2021-09-21T20:38:54.851Z",
+          type: "GIWEB",
+          __v: 0,
         },
       ],
 
@@ -68,10 +56,10 @@ class Home extends Component {
     });
   }
 
-  renderSuperHeroes = () => {
+  renderTweets = () => {
     return (
       <Row>
-        <Carta heroes={this.state.superHeroes} />
+        <Carta tweets={this.state.tweets} />
       </Row>
     );
   };
@@ -81,7 +69,7 @@ class Home extends Component {
     return (
       <Container>
         <h1>{this.state.estadoPagina}</h1>
-        {this.renderSuperHeroes()}
+        {this.renderTweets()}
       </Container>
     );
   }

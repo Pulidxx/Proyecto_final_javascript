@@ -1,3 +1,22 @@
-.my-navbar{
-    background-color: brown;
+.body {
+  background: rgba(21, 32, 43);
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+  text-align: center;
+}
+.my-navbar {
+  background-color: brown;
+}
+.carta {
+  background: rgba(21, 32, 43);
+  width: 18rem;
+}
+.svg-icon {
+  height: 1em;
+  fill: currentcolor;
+  /* currentColor actua como una variable tomando 
+     el color el nodo padre. 
+     Si estás utilizando vectores que poseen distintos 
+     rellenos, no serán afectados por esta línea
+  */
 }
