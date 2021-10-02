@@ -12,3 +12,6 @@
 .App-link {
   color: #61dafb;
 }
+.container {
+  min-height: 100vh;
+}

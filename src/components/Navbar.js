@@ -15,11 +15,13 @@ class NavBar extends Component {
     return (
       <Navbar variant="dark">
         <Nav className="flex-column" ActiveKey="/home">
-          <Navbar.Brand href="#home" nameClass="logo">
-            <img
-              width="25%"
-              src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"
-            ></img>
+          <Navbar.Brand href="#home" className="p-3">
+            <center>
+              <img
+                width="30%"
+                src="https://pngimg.com/uploads/twitter/twitter_PNG15.png"
+              ></img>
+            </center>
           </Navbar.Brand>
           <Nav.Link eventKey="link-2">
             <img src={home} className="svg-icon"></img>

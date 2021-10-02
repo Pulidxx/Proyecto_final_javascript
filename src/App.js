@@ -1,23 +1,25 @@
 import "./App.css";
+import "./components/styles/home.css";
 import NavBar from "./components/Navbar";
 import Home from "./components/Home";
+import Filtro from "./components/Filtro";
 import { Container, Row, Col } from "react-bootstrap";
-
-//JSX
-//npm install bootstrap@4.0.2
 
 function App() {
   return (
     <div className="body">
       <Container fluid>
         <Row>
-          <Col md={2}>
+          <Col xs sm md lg={2} className="borde-r">
             <NavBar />
           </Col>
-          <Col md={6}>
+          <Col xs sm md lg={6}>
+            <Row>
+              <Filtro />
+            </Row>
             <Home />
           </Col>
-          <Col md={4}></Col>
+          <Col xs sm md lg={4} className="borde-l"></Col>
         </Row>
       </Container>
     </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Card, Button, Container, Row, Col } from "react-bootstrap";
-import Carta from "./carta";
+import { Row } from "react-bootstrap";
+import Tweet from "./Tweets";
 import "./styles/home.css";
 
 class Home extends Component {
@@ -59,7 +59,7 @@ class Home extends Component {
   renderTweets = () => {
     return (
       <Row>
-        <Carta tweets={this.state.tweets} />
+        <Tweet tweets={this.state.tweets} />
       </Row>
     );
   };
@@ -67,10 +67,10 @@ class Home extends Component {
   //Constructor
   render() {
     return (
-      <Container>
+      <row>
         <h1>{this.state.estadoPagina}</h1>
         {this.renderTweets()}
-      </Container>
+      </row>
     );
   }
 }

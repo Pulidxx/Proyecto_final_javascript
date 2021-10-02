@@ -1,21 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+}
 .body {
   background: rgba(21, 32, 43);
-  color: rgb(255, 255, 255);
-  min-height: 100vh;
-  max-width: 100vw;
-}
-.my-navbar {
-  background-color: brown;
+  min-height: 101vh;
+  color: rgb(247, 245, 255);
 }
 .carta {
   background: rgba(21, 32, 43);
-  width: 18rem;
+  width: 100%;
+  margin: 0;
+  border: rgb(56, 68, 77) 1px solid;
 }
+/* .card-body {
+  border: rgb(56, 68, 77) 1px solid;
+} */
+
 .svg-icon {
   height: 4rem;
   fill: currentcolor;
 }
-.logo {
-  text-align: center;
-  padding: 20px 0;
+.borde-l {
+  border-left: rgb(56, 68, 77) 1px solid;
+}
+.borde-b {
+  border-bottom: rgb(56, 68, 77) 1px solid;
+}
+.borde-r {
+  border-right: rgb(56, 68, 77) 1px solid;
 }
