@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+// react bootstrap
 import { Nav, Navbar } from "react-bootstrap";
+
+// iconos del navBar
 import home from "../assets/home.svg";
 import explore from "../assets/explore.svg";
 import notifications from "../assets/notifications.svg";
@@ -15,6 +18,7 @@ class NavBar extends Component {
     return (
       <Navbar variant="dark">
         <Nav className="flex-column" ActiveKey="/home">
+          {/* logo de twitter */}
           <Navbar.Brand href="#home" className="p-3">
             <center>
               <img
@@ -23,6 +27,7 @@ class NavBar extends Component {
               ></img>
             </center>
           </Navbar.Brand>
+          {/* iEnlaces con sus respectivos iconos */}
           <Nav.Link eventKey="link-2">
             <img src={home} className="svg-icon"></img>
             Home

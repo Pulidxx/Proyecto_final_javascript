@@ -17,7 +17,9 @@ function App() {
             <Row>
               <Filtro />
             </Row>
-            <Home />
+            <Row>
+              <Home />
+            </Row>
           </Col>
           <Col xs sm md lg={4} className="borde-l"></Col>
         </Row>

@@ -14,10 +14,6 @@ body {
   margin: 0;
   border: rgb(56, 68, 77) 1px solid;
 }
-/* .card-body {
-  border: rgb(56, 68, 77) 1px solid;
-} */
-
 .svg-icon {
   height: 4rem;
   fill: currentcolor;
