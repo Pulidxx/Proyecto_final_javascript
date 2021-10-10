@@ -3,6 +3,7 @@ import "./components/styles/home.css";
 import NavBar from "./components/Navbar";
 import Home from "./components/Home";
 import Filtro from "./components/Filtro";
+import Forms from "./components/Form";
 import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
@@ -21,7 +22,11 @@ function App() {
               <Home />
             </Row>
           </Col>
-          <Col xs sm md lg={4} className="borde-l"></Col>
+          <Col xs sm md lg={4} className="borde-l">
+            <Row className="mx-2">
+              <Forms />
+            </Row>
+          </Col>
         </Row>
       </Container>
     </div>

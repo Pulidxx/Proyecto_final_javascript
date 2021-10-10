@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilter,
   faCode,
-  faFootballBall,
+  faPager,
   faFileInvoice,
   faHeartbeat,
 } from "@fortawesome/free-solid-svg-icons";
@@ -34,19 +34,19 @@ class Filtro extends Component {
           </Col>
           <Col>
             <Button variant="outline-light" className="m-3">
-              <FontAwesomeIcon icon={faCode} />
+              <FontAwesomeIcon icon={faCode} className="mx-1" />
               Programacion
             </Button>
             <Button variant="outline-light" className="m-3">
-              <FontAwesomeIcon icon={faFootballBall} />
-              Deportes
+              <FontAwesomeIcon icon={faPager} className="mx-1" />
+              GIWEB
             </Button>
             <Button variant="outline-light" className="m-3">
-              <FontAwesomeIcon icon={faFileInvoice} />
+              <FontAwesomeIcon icon={faFileInvoice} className="mx-1" />
               Noticias
             </Button>
             <Button variant="outline-light" className="m-3">
-              <FontAwesomeIcon icon={faHeartbeat} />
+              <FontAwesomeIcon icon={faHeartbeat} className="mx-1" />
               Salud
             </Button>
           </Col>
