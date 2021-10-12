@@ -12,10 +12,21 @@ import {
 // react bootstrap
 import { Row, Button, Col } from "react-bootstrap";
 import "./styles/home.css";
+import Home from "./Home";
+import { text } from "@fortawesome/fontawesome-svg-core";
 
 class Filtro extends Component {
   constructor(props) {
     super(props);
+
+    this.handleButton = this.handleButton.bind(this);
+  }
+
+  handleButton(filter){
+    const tweetFilter = new Home();
+    tweetFilter.tweetFilter(filter);
+
+    console.log(filter)
   }
 
   render() {
@@ -33,19 +44,19 @@ class Filtro extends Component {
             </h4>
           </Col>
           <Col>
-            <Button variant="outline-light" className="m-3">
+            <Button variant="outline-light" className="m-3" onClick={this.handleButton}>
               <FontAwesomeIcon icon={faCode} className="mx-1" />
               Programacion
             </Button>
-            <Button variant="outline-light" className="m-3">
+            <Button variant="outline-light" className="m-3" onClick={this.handleButton}>
               <FontAwesomeIcon icon={faPager} className="mx-1" />
               GIWEB
             </Button>
-            <Button variant="outline-light" className="m-3">
+            <Button variant="outline-light" className="m-3" onClick={this.handleButton}>
               <FontAwesomeIcon icon={faFileInvoice} className="mx-1" />
               Noticias
             </Button>
-            <Button variant="outline-light" className="m-3">
+            <Button variant="outline-light" className="m-3" onClick={this.handleButton}>
               <FontAwesomeIcon icon={faHeartbeat} className="mx-1" />
               Salud
             </Button>
