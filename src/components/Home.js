@@ -14,6 +14,7 @@ class Home extends Component {
           author: "anonymous",
           content: "xd",
           date: "2021-09-21T04:20:20.182Z",
+          type: "GIWEB",
           __v: 0,
         },
         {
@@ -41,21 +42,16 @@ class Home extends Component {
           __v: 0,
         },
       ],
-
-      estadoPagina: 2,
     };
-
-    this.cambiarNumero = this.cambiarNumero.bind(this);
-    setTimeout(this.cambiarNumero, 2000);
   }
 
-  cambiarNumero() {
-    this.setState({
-      ...this.state,
-      estadoPagina: 55,
-    });
+
+  tweetFilter(themeFilter){
+    let selectedTweets = this.state.tweets.filter(Tweet => {return Tweet.type.includes(themeFilter)});
+    this.setState({tweets: selectedTweets});
   }
 
+  
   renderTweets = () => {
     return (
       <Row>
@@ -68,7 +64,6 @@ class Home extends Component {
   render() {
     return (
       <row>
-        <h1>{this.state.estadoPagina}</h1>
         {this.renderTweets()}
       </row>
     );
